@@ -1,0 +1,233 @@
+:root {
+  --basic-color: #78777723;
+  --basic-border-color: #787777DC;
+}
+
+.main {
+  width: 1530px;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+
+.main-interface {
+  flex-basis: 70%;
+}
+
+.aside-interface {
+  flex-basis: 30%;
+}
+
+.user-interface {
+  padding: 15px;
+  background-color: var(--basic-color);
+  border-bottom: 1px solid var(--basic-border-color);
+}
+
+.user-picture {
+  width: 85px;
+  height: 85px;
+  border-radius: 100px;
+  position: relative;
+}
+
+.user-photo {
+  width: 100%;
+  border-radius: 80px;
+}
+
+.user-status {
+  width: 20px;
+  height: 20px;
+  border: 2px solid #2F8977;
+  position: absolute;
+  bottom: 2%;
+  right: 2%;
+  border-radius: 30px;
+}
+
+.user-status__check {
+  width: 32%;
+  height: 50%;
+  border-bottom: 2px solid #2F8977;
+  border-right: 2px solid #2F8977;
+  transform: rotate(45deg);
+  margin: 15% auto;
+}
+
+.search-container {
+  margin: 30px auto;
+  width: 90%;
+  position: relative;
+}
+
+.search-input {
+  all: unset;
+  width: 80%;
+  margin: 0 auto;
+  background-color: #FFF;
+  border-radius: 40px;
+  height: 30px;
+  font-size: 20px;
+  padding: 7px 38px;
+  color: grey;
+  border: 1px solid var(--basic-border-color);
+}
+
+.search-container::before {
+  content: "";
+  width: 20px;
+  height: 20px;
+  background-image: url(../img/search__logo.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: absolute;
+  top: 28%;
+  left: 3%;
+}
+
+.chats__title {
+  color: rgb(50, 108, 226);
+  font-size: 30px;
+  font-weight: normal;
+  margin: 40px 15px 40px;
+}
+
+.contact-chat {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  align-items: center;
+  height: auto;
+  border-bottom: 1px solid var(--basic-border-color);
+  padding: 25px 15px 25px;
+  cursor: pointer;
+}
+
+.contact-chat__desc {
+  flex-basis: 70%;
+  font-size: 20px;
+  color: var(--basic-border-color);
+  line-height: 30px;
+}
+
+.contact-name {
+  font-weight: bold;
+}
+
+.contact-chat__desc__info {
+  display: flex;
+  justify-content: space-between;
+}
+
+.main-interface {
+  border: 1px solid var(--basic-border-color);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.header {
+  background-color: var();
+  background-color: var(--basic-color);
+  border-bottom: 1px solid var(--basic-border-color);
+  padding: 10px 16px;
+  display: flex;
+  align-items: center;
+  font-size: 15px;
+}
+
+.header h1 {
+  margin-left: 15px;
+  color: var(--basic-border-color);
+  font-weight: bold;
+}
+
+.keyboart-wrapper {
+  position: relative;
+  background-color: var(--basic-color);
+  padding: 30px;
+  border-top: 1px solid var(--basic-border-color);
+  position: relative;
+}
+
+.keyboart {
+  all: unset;
+  margin: 0 auto;
+  width: 94%;
+  background-color: #FFF;
+  border-radius: 40px;
+  height: 30px;
+  font-size: 20px;
+  padding: 7px 30px;
+  color: grey;
+  border: 1px solid var(--basic-border-color);
+}
+
+.btn__send {
+  position: absolute;
+  top: 32%;
+  right: 3%;
+  height: 42px;
+  width: 42px;
+  border-radius: 30px;
+  background-color: transparent;
+  border: none;
+  color: var(--basic-border-color);
+  cursor: pointer;
+}
+
+.btn__send:hover {
+  color: rgb(65, 65, 65);
+}
+
+.btn__send:active {
+  color: #2F8977;
+}
+
+.chat-converstion {
+  padding: 15px;
+  height: 600px;
+  overflow: auto;
+}
+
+.contact__message {
+  display: flex;
+  align-items: center;
+  margin: 10px 0 40px;
+  position: relative;
+}
+
+.contact__message__container {
+  background-color: rgb(47, 47, 85);
+  color: white;
+  margin-left: 10px;
+  font-size: 20px;
+  padding: 26px 20px;
+  border-radius: 40px;
+}
+
+.contact__message__container p {
+  display: inline;
+}
+
+.contact__message__data {
+  position: absolute;
+  top: 120%;
+  left: 12%;
+  color: var(--basic-border-color);
+  font-size: 16px;
+}
+
+.owner__message {
+  justify-content: end;
+}
+
+.owner__message .contact__message__container {
+  background-color: var(--basic-color);
+  color: black;
+}
+
+.owner__message .contact__message__data {
+  left: 87%;
+}
