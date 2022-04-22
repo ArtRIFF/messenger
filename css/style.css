@@ -10,12 +10,20 @@
   margin: 0 auto;
 }
 
-.main-interface {
-  flex-basis: 70%;
+@media (max-width: 1530px) {
+  .main {
+    width: 100%;
+  }
 }
 
 .aside-interface {
   flex-basis: 30%;
+}
+
+@media (max-width: 1100px) {
+  .aside-interface {
+    flex-basis: 50%;
+  }
 }
 
 .user-interface {
@@ -29,6 +37,13 @@
   height: 85px;
   border-radius: 100px;
   position: relative;
+}
+
+@media (max-width: 736px) {
+  .user-picture {
+    width: 55px;
+    height: 55px;
+  }
 }
 
 .user-photo {
@@ -74,6 +89,12 @@
   border: 1px solid var(--basic-border-color);
 }
 
+@media (max-width: 771px) {
+  .search-input {
+    width: 60%;
+  }
+}
+
 .search-container::before {
   content: "";
   width: 20px;
@@ -111,6 +132,13 @@
   line-height: 30px;
 }
 
+@media (max-width: 1160px) {
+  .contact-chat__desc {
+    font-size: 18px;
+    line-height: 25px;
+  }
+}
+
 .contact-name {
   font-weight: bold;
 }
@@ -125,6 +153,7 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  flex-basis: 70%;
 }
 
 .header {
@@ -148,7 +177,6 @@
   background-color: var(--basic-color);
   padding: 30px;
   border-top: 1px solid var(--basic-border-color);
-  position: relative;
 }
 
 .keyboart {
@@ -164,6 +192,12 @@
   border: 1px solid var(--basic-border-color);
 }
 
+@media (max-width: 1004px) {
+  .keyboart {
+    width: 80%;
+  }
+}
+
 .btn__send {
   position: absolute;
   top: 32%;
@@ -175,6 +209,12 @@
   border: none;
   color: var(--basic-border-color);
   cursor: pointer;
+}
+
+@media (max-width: 1004px) {
+  .btn__send {
+    right: 12%;
+  }
 }
 
 .btn__send:hover {
@@ -230,4 +270,16 @@
 
 .owner__message .contact__message__data {
   left: 87%;
+}
+
+@media (max-width: 1165px) {
+  .owner__message .contact__message__data {
+    left: 70%;
+  }
+}
+
+@media (max-width: 771px) {
+  .owner__message .contact__message__data {
+    left: 50%;
+  }
 }
